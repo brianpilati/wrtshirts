@@ -4,7 +4,7 @@ const titleBuilder = require('./titleBuilder');
 const breadCrumbBuilder = require('./breadCrumbBuilder');
 
 module.exports = {
-  buildIndexBody(tshirts) {
+  buildIndexBody(tshirts, sweatshirts, hoodies, longsleeveShirts, mechName) {
     return `
         <body>
           <div class="background-splash"></div>
@@ -15,34 +15,65 @@ module.exports = {
                 <div class="article-title">
                   ${titleBuilder.title('Robot By Name')} <hr>
                 </div>
-                <div class="genres">
-                  Names
+                <div class="tshirts">
+                  ${mechName} 
                 </div>
                 <div class="article-title">
                   ${titleBuilder.title('T-Shirts')} <hr>
                 </div>
-                <div class="genres">
+                <div class="tshirts">
                   ${tshirts}
                 </div>
                 <div class="article-title">
                   ${titleBuilder.title('Hoodies')} <hr>
                 </div>
-                <div class="genres">
-                  Hoodies
+                <div class="tshirts">
+                  ${hoodies}
+                </div>
+                <div class="article-title">
+                  ${titleBuilder.title('Sweatshirts')} <hr>
+                </div>
+                <div class="tshirts">
+                  ${sweatshirts}
                 </div>
                 <div class="article-title">
                   ${titleBuilder.title('Long-Sleeve Shirts')} <hr>
                 </div>
-                <div class="genres">
-                  Long-Sleeve Shirts
+                <div class="tshirts">
+                  ${longsleeveShirts}
                 </div>
                 <div class="article-title">
                   ${titleBuilder.title('Recommended Shirts')} <hr>
+                </div>
+                <div class="genres">
+                  ${tshirts}
                 </div>
               </article>
             </div>
             <footer class="footer">Footer</footer>
           </div>
+          <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+          <script type="text/javascript" src="/libs/slick.min.js"></script>
+          <script type="text/javascript">
+            $(document).ready(function(){
+              $('.genres').slick({
+                centerMode: true,
+                infinite: true,
+                centerPadding: '60px',
+                slidesToShow: 5,
+                responsive: [
+                  {
+                    breakpoint: 992,
+                    settings: {
+                      centerMode: true,
+                      centerPadding: '20px',
+                      slidesToShow: 3
+                    }
+                  }
+                ]
+              });
+            });
+          </script>
         </body>
       `;
   },

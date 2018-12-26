@@ -2,13 +2,13 @@ const FilePath = require('./filePath');
 const tshirts = require('../data/t-shirts');
 
 module.exports = {
-  getActiveTShirts() {
-    const requests = tshirts.map(tshirt => {
+  getActiveMechNames() {
+    const requests = tshirts.map(mech => {
       return new Promise(resolve => {
-        const link = FilePath.encodePath(`/tshirts/${tshirt.name}/index.html`);
+        const link = FilePath.encodePath(`/mech/${mech.name}/index.html`);
         resolve(
           `<div class="tshirt"><a class="tshirt-container" href="${link}"><div class="letter">${
-            tshirt.name
+            mech.name
           }</div></a></div>`
         );
       });

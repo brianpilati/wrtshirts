@@ -1,1 +1,6 @@
-module.exports = ['T-Shirt', 'Hoodie', 'Long-Sleeve'].sort();
+module.exports = {
+  tshirt: 'T-Shirt',
+  hoodie: 'Hoodie',
+  'long-sleeve': 'Long Sleeve',
+  sweatshirt: 'Sweat Shirt'
+};

@@ -1,14 +1,14 @@
 const FilePath = require('./filePath');
-const tshirts = require('../data/t-shirts');
+const longSleeveShirts = require('../data/long-sleeve-shirts');
 
 module.exports = {
-  getActiveTShirts() {
-    const requests = tshirts.map(tshirt => {
+  getActiveLongSleeveShirts() {
+    const requests = longSleeveShirts.map(longsleeveShirt => {
       return new Promise(resolve => {
-        const link = FilePath.encodePath(`/tshirts/${tshirt.name}/index.html`);
+        const link = FilePath.encodePath(`/longsleeve/${longsleeveShirt.name}/index.html`);
         resolve(
           `<div class="tshirt"><a class="tshirt-container" href="${link}"><div class="letter">${
-            tshirt.name
+            longsleeveShirt.name
           }</div></a></div>`
         );
       });
