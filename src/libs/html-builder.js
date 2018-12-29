@@ -20,8 +20,8 @@ module.exports = {
     `;
   },
 
-  buildApparelHtml(apparel) {
-    const indexPage = bodyBuilder.buildApparelBody(apparel);
+  buildApparelHtml(apparelType, apparel) {
+    const indexPage = bodyBuilder.buildApparelBody(apparelType, apparel);
     return `
       <!DOCTYPE html>
       <html lang="en">

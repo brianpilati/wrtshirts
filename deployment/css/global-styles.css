@@ -24,8 +24,15 @@ body {
 }
 */
 
-.article,
-.copyright {
+.article-title {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 1.5em;
+}
+
+.article {
   flex-direction: column;
   flex: auto;
   display: flex;
@@ -41,80 +48,22 @@ body {
   font-weight: bold;
   display: flex;
   margin-left: 10px;
+  width: 100%;
 }
 
-.article-bread-crumb-container {
-  padding: 4px;
-  position: relative;
-  min-height: 20px;
-  z-index: 11;
-  background-color: lightgrey;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  margin-left: 5px;
-  min-width: 50px;
-  text-align: center;
+.article-bread-crumb {
+  padding: 0;
+  font-weight: bold;
+  display: flex;
+  margin-left: 10px;
+  width: 100%;
 }
 
-.article-bread-crumb-container > a {
-  min-width: 50px;
-}
-
-.article-bread-crumb-container:after {
-  content: '';
-  background-color: lightgrey;
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 5.5px;
-  right: -15px;
-  width: 28.5px;
-  height: 28.5px;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.active-article-bread-crumb-container {
-  padding: 4px;
-  position: relative;
-  min-height: 20px;
-  z-index: 11;
-  background-color: #8ad0f6;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  margin-left: 5px;
-  min-width: 50px;
-  text-align: center;
-}
-
-.active-article-bread-crumb-container > a {
-  min-width: 50px;
-}
-
-.active-article-bread-crumb-container:after {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: -1;
-  top: 5.5px;
-  right: -15px;
-  width: 28.5px;
-  height: 28.5px;
-  background-color: #8ad0f6;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.article-divider {
+.article-bread-crumb-divider {
   position: relative;
   width: 20px;
   height: 36px;
+  padding-left: 12px;
 }
 
 .article-bread-crumb > * {
@@ -122,8 +71,20 @@ body {
   align-items: center;
 }
 
+.article-container {
+  overflow: hidden;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-content: space-evenly;
+  flex: auto;
+  flex-wrap: wrap;
+}
+
 .footer {
   padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 20px;
   box-shadow: 5px 5px 5px #888888;
   flex-direction: column;

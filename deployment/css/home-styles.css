@@ -2,14 +2,6 @@
   display: block;
 }
 
-.article-title {
-  width: 100%;
-  padding: 10px;
-  font-weight: bold;
-  line-height: normal;
-  font-size: 1.5em;
-}
-
 .tshirts {
   width: 750px;
   overflow: hidden;

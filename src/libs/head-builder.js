@@ -85,7 +85,7 @@ module.exports = {
         <meta property="article:published_time" content="${song.createdDate}" />
         <link rel="stylesheet" href="/css/global-styles.css">
         <link rel="stylesheet" href="/css/tshirt-styles.css">
-        <link rel="stylesheet" href="/css/song-styles.css">
+        <link rel="stylesheet" href="/css/apparel-styles.css">
       </head>
     `;
   },

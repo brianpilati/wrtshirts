@@ -1,7 +1,6 @@
 const adBuilder = require('./ad-builder');
 const headerBuilder = require('./header-builder');
 const titleBuilder = require('./title-builder');
-const breadCrumbBuilder = require('./breadCrumbBuilder');
 
 module.exports = {
   buildIndexBody(tshirts, sweatshirts, hoodies, longsleeveShirts, mechName, recommendedShirts) {
@@ -26,14 +25,14 @@ module.exports = {
                 </div>
                 <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
-                  ${titleBuilder.title('Hoodies')} <hr>
+                  <a href="/hoodies">${titleBuilder.title('Hoodies')}</a> <hr>
                 </div>
                 <div class="tshirts">
                   ${hoodies}
                 </div>
                 <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
-                  ${titleBuilder.title('Sweatshirts')} <hr>
+                  <a href="/sweatshirts">${titleBuilder.title('Sweatshirts')}</a> <hr>
                 </div>
                 <div class="tshirts">
                   ${sweatshirts}
@@ -100,13 +99,19 @@ module.exports = {
                 ${adBuilder.buildAsideAds()}
               </aside>
               <article class="article">
-                ${breadCrumbBuilder.buildBreadCrumb()}
+                <div class="article-bread-crumb">
+                  <div>
+                    <a href="/">Home</a>
+                  </div>
+                  <div class="article-bread-crumb-divider">
+                    >
+                  </div>
+                </div>
                 <div class="article-title">
-                  ${apparelType}
+                  ${titleBuilder.title(apparelType)}
                 </div>
-                <div class="artist-container">
+                <div class="article-container">
                   ${apparel}
-                </div>
                 </div>
               </article>
             </div>
