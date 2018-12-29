@@ -1,10 +1,34 @@
 const tshirts = require('../data/t-shirts');
+const hoodies = require('../data/hoodies');
+const longsleeves = require('../data/long-sleeve-shirts');
+const sweatshirts = require('../data/sweatshirts');
+const titleBuilder = require('./title-builder');
+const sizes = require('./enums/style-enum');
+
+function buildNames() {
+  const names = {};
+  [tshirts, hoodies, longsleeves, sweatshirts].forEach(apparelCollection => {
+    apparelCollection.forEach(item => {
+      names[item.name] = true;
+    });
+  });
+
+  const allNames = Object.keys(names);
+  const totalNames = allNames.length;
+  const modNames = totalNames % 5;
+  if (modNames) {
+    for (let index = modNames; index < 5; index++) {
+      allNames.push('');
+    }
+  }
+  return allNames;
+}
 
 module.exports = {
-  getActiveMechNames() {
-    const requests = tshirts.map(mech => {
+  getMechNames() {
+    const requests = buildNames().map(name => {
       return new Promise(resolve => {
-        resolve(`<div class="tshirt">${mech.code}</div>`);
+        resolve(`<div class="mech-name">${titleBuilder.title(name, sizes.medium)}</div>`);
       });
     });
 

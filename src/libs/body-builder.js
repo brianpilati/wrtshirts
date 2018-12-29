@@ -15,7 +15,7 @@ module.exports = {
                 <div class="article-title">
                   ${titleBuilder.title('Robot By Name')} <hr>
                 </div>
-                <div class="tshirts">
+                <div class="mech-names">
                   ${mechName} 
                 </div>
                 <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>

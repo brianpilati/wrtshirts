@@ -23,7 +23,7 @@ const pages = Array.apply(null, { length: pagesToBuild }).map(Number.call, Numbe
 class IndexFileBuilder {
   async buildPages() {
     const recommendedShirts = await recommendedBuilder.getActiveRecommendedShirts();
-    const mechNames = await mechNameBuilder.getActiveMechNames();
+    const mechNames = await mechNameBuilder.getMechNames();
     const longsleeveShirts = await apparelBuilder.getFrontPageApparel(require('../data/long-sleeve-shirts'));
     const hoodies = await apparelBuilder.getFrontPageApparel(require('../data/hoodies'));
     const tshirts = await apparelBuilder.getFrontPageApparel(require('../data/t-shirts'));
