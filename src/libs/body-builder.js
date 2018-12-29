@@ -1,10 +1,10 @@
 const adBuilder = require('./adBuilder');
-const headerBuilder = require('./headerBuilder');
-const titleBuilder = require('./titleBuilder');
+const headerBuilder = require('./header-builder');
+const titleBuilder = require('./title-builder');
 const breadCrumbBuilder = require('./breadCrumbBuilder');
 
 module.exports = {
-  buildIndexBody(tshirts, sweatshirts, hoodies, longsleeveShirts, mechName) {
+  buildIndexBody(tshirts, sweatshirts, hoodies, longsleeveShirts, mechName, recommendedShirts) {
     return `
         <body>
           <div class="background-splash"></div>
@@ -18,35 +18,40 @@ module.exports = {
                 <div class="tshirts">
                   ${mechName} 
                 </div>
+                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   ${titleBuilder.title('T-Shirts')} <hr>
                 </div>
                 <div class="tshirts">
                   ${tshirts}
                 </div>
+                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   ${titleBuilder.title('Hoodies')} <hr>
                 </div>
                 <div class="tshirts">
                   ${hoodies}
                 </div>
+                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   ${titleBuilder.title('Sweatshirts')} <hr>
                 </div>
                 <div class="tshirts">
                   ${sweatshirts}
                 </div>
+                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   ${titleBuilder.title('Long-Sleeve Shirts')} <hr>
                 </div>
                 <div class="tshirts">
                   ${longsleeveShirts}
                 </div>
+                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   ${titleBuilder.title('Recommended Shirts')} <hr>
                 </div>
-                <div class="genres">
-                  ${tshirts}
+                <div class="recommendations">
+                  ${recommendedShirts}
                 </div>
               </article>
             </div>
@@ -56,7 +61,7 @@ module.exports = {
           <script type="text/javascript" src="/libs/slick.min.js"></script>
           <script type="text/javascript">
             $(document).ready(function(){
-              $('.genres').slick({
+              $('.recommendations').slick({
                 centerMode: true,
                 infinite: true,
                 centerPadding: '60px',

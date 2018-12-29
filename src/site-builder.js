@@ -1,4 +1,4 @@
-const indexFileBuilder = require('./builders/indexFileBuilder');
+const indexFileBuilder = require('./builders/index-file-builder');
 
 function outputResults(message, results) {
   console.log(`\n\n${message} Results\n`);

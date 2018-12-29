@@ -5,12 +5,7 @@ module.exports = {
   getActiveHoodies() {
     const requests = hoodies.map(hoodie => {
       return new Promise(resolve => {
-        const link = FilePath.encodePath(`/hoodie/${hoodie.name}/index.html`);
-        resolve(
-          `<div class="tshirt"><a class="tshirt-container" href="${link}"><div class="letter">${
-            hoodie.name
-          }</div></a></div>`
-        );
+        resolve(`<div class="tshirt">${hoodie.code}</div>`);
       });
     });
 

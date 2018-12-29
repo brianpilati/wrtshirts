@@ -1,10 +1,10 @@
 const tshirts = require('../data/t-shirts');
 
 module.exports = {
-  getActiveMechNames() {
-    const requests = tshirts.map(mech => {
+  getActiveRecommendedShirts() {
+    const requests = tshirts.map(tshirt => {
       return new Promise(resolve => {
-        resolve(`<div class="tshirt">${mech.code}</div>`);
+        resolve(`<div class="recommended">${tshirt.code}</div>`);
       });
     });
 
