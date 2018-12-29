@@ -30,25 +30,29 @@ class IndexFileBuilder {
     const tshirts = await apparelBuilder.getFrontPageApparel(require('../data/t-shirts'));
     const sweatshirts = await apparelBuilder.getFrontPageApparel(require('../data/sweatshirts'));
 
-    pages.map(index => {
+    const results = pages.map(index => {
       index++;
-      const indexFilePath = getFilePath(index);
-      const page = htmlBuilder.buildIndexHtml(
-        index,
-        tshirts,
-        sweatshirts,
-        hoodies,
-        longsleeveShirts,
-        mechNames,
-        recommendedShirts
-      );
-      fs.writeFile(indexFilePath, page, err => {
-        if (err) {
-          return console.log(err);
-        }
-        console.log(`The ${indexFilePath} file was saved!`);
+      return new Promise(resolve => {
+        const indexFilePath = getFilePath(index);
+        const page = htmlBuilder.buildIndexHtml(
+          index,
+          tshirts,
+          sweatshirts,
+          hoodies,
+          longsleeveShirts,
+          mechNames,
+          recommendedShirts
+        );
+        fs.writeFile(indexFilePath, page, err => {
+          if (err) {
+            return console.log(err);
+          }
+          resolve(`The ${indexFilePath} file was saved!`);
+        });
       });
     });
+
+    return Promise.all(results);
   }
 }
 
@@ -56,6 +60,8 @@ module.exports = new IndexFileBuilder();
 
 if (options.isCommandLine()) {
   new IndexFileBuilder().buildPages().then(function(results) {
-    console.log('Finished');
+    results.map(result => {
+      console.log(result);
+    });
   });
 }

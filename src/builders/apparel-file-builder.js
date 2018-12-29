@@ -13,6 +13,14 @@ function getFilePath(apparelType) {
   return FilePath.encodePath(filePath);
 }
 
+function getAllShirts() {
+  return require('../data/long-sleeve-shirts')
+    .concat(require('../data/t-shirts'), require('../data/hoodies'), require('../data/sweatshirts'))
+    .sort((a, b) => {
+      return a.name > b.name ? 1 : -1;
+    });
+}
+
 class ApparelFileBuilder {
   buildApparelPage(items, apparelType, apparelTitle) {
     const apparelPath = getFilePath(apparelType);
@@ -42,14 +50,13 @@ class ApparelFileBuilder {
   }
 
   async buildAllPages() {
-    return Promise.all(
+    return Promise.all([
       await this.buildApparelPage(require('../data/long-sleeve-shirts'), 'long-sleeves', 'Long Sleeve Shirts'),
       await this.buildApparelPage(require('../data/t-shirts'), 'tshirts', 'T-Shirts'),
       await this.buildApparelPage(require('../data/hoodies'), 'hoodies', 'Hoodies'),
-      await this.buildApparelPage(require('../data/sweatshirts'), 'sweatshirts', 'Sweatshirts')
-    ).then(results => {
-      return results;
-    });
+      await this.buildApparelPage(require('../data/sweatshirts'), 'sweatshirts', 'Sweatshirts'),
+      await this.buildApparelPage(getAllShirts(), 'recommended', 'Recommended Shirts')
+    ]);
   }
 }
 
@@ -59,6 +66,8 @@ if (options.isCommandLine()) {
   const apparelFileBuilder = new ApparelFileBuilder();
 
   apparelFileBuilder.buildAllPages().then(function(results) {
-    console.log(1, results.join(''));
+    results.map(result => {
+      console.log(result);
+    });
   });
 }

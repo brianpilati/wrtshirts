@@ -46,11 +46,12 @@ module.exports = {
                 </div>
                 <div><a href="/long-sleeves/index.html"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
-                  ${titleBuilder.title('Recommended Shirts')} <hr>
+                  <a href="/recommended/index.html">${titleBuilder.title('Recommended Shirts')}</a> <hr>
                 </div>
                 <div class="recommendations">
                   ${recommendedShirts}
                 </div>
+                <div><a href="/recommended/index.html"><div class="see-more-button">See More ...</div></a></div>
               </article>
             </div>
             <footer class="footer">
