@@ -13,11 +13,13 @@ function buildNames() {
     });
   });
 
-  const allNames = Object.keys(names);
+  const allNames = Object.keys(names).sort((a, b) => {
+    return a > b ? 1 : -1;
+  });
   const totalNames = allNames.length;
-  const modNames = totalNames % 5;
+  const modNames = totalNames % 4;
   if (modNames) {
-    for (let index = modNames; index < 5; index++) {
+    for (let index = modNames; index < 4; index++) {
       allNames.push('');
     }
   }

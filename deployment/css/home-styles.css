@@ -38,7 +38,7 @@
 }
 
 .mech-names {
-  width: 700px;
+  width: 750px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -67,29 +67,24 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .tshirts {
+    width: 275px;
+    min-width: 275px;
+  }
+
+  .mech-names {
     width: 400px;
     min-width: 400px;
   }
 
   .recommendations {
-    width: 325px;
-  }
-
-  .track-image-container,
-  .track-image {
-    height: 100px;
-    width: 100px;
-  }
-
-  .track-title {
-    font-size: 0.75em;
+    width: 300px;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .tshirts {
-    width: 500px;
+    width: 550px;
   }
 
   .recommendations {
@@ -100,7 +95,11 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .tshirts {
-    width: 825px;
+    width: 550px;
+  }
+
+  .mech-names {
+    width: 700px;
   }
 
   .recommendations {
@@ -110,6 +109,11 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .mech-names,
+  .tshirts {
+    width: 825px;
+  }
+
   .recommendations {
     width: 900px;
   }

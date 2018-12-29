@@ -1,4 +1,4 @@
-const adBuilder = require('./adBuilder');
+const adBuilder = require('./ad-builder');
 const headerBuilder = require('./header-builder');
 const titleBuilder = require('./title-builder');
 const breadCrumbBuilder = require('./breadCrumbBuilder');
@@ -18,7 +18,6 @@ module.exports = {
                 <div class="mech-names">
                   ${mechName} 
                 </div>
-                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   <a href="/tshirts">${titleBuilder.title('T-Shirts')}</a> <hr>
                 </div>
@@ -56,7 +55,12 @@ module.exports = {
               </article>
             </div>
             <footer class="footer">
-              ${adBuilder.buildFooterAd()}
+              <div class="large-footer-ad">
+                ${adBuilder.buildFooterAd()}
+             </div>
+              <div class="small-footer-ad">
+                ${adBuilder.buildSmallFooterAd()}
+             </div>
             </footer>
           </div>
           <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
