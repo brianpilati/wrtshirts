@@ -26,8 +26,7 @@ module.exports = {
       <!DOCTYPE html>
       <html lang="en">
         ${headBuilder.buildApparel({
-          title: 'title',
-          artist: 'artist'
+          name: apparelType
         })}
         ${indexPage}
       </html>
@@ -40,8 +39,7 @@ module.exports = {
       <!DOCTYPE html>
       <html lang="en">
         ${headBuilder.buildApparel({
-          title: 'title',
-          artist: 'artist'
+          name: mechName
         })}
         ${indexPage}
       </html>
