@@ -1,6 +1,7 @@
 const fs = require('fs');
+const options = require('../libs/options');
 const htmlBuilder = require('../libs/html-builder');
-const FilePath = require('../libs/filePath');
+const FilePath = require('../libs/file-path');
 const recommendedBuilder = require('../libs/recommended-builder');
 const mechNameBuilder = require('../libs/mech-name-builder');
 const apparelBuilder = require('../libs/apparel-builder');
@@ -52,3 +53,9 @@ class IndexFileBuilder {
 }
 
 module.exports = new IndexFileBuilder();
+
+if (options.isCommandLine()) {
+  new IndexFileBuilder().buildPages().then(function(results) {
+    console.log('Finished');
+  });
+}

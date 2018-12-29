@@ -18,5 +18,19 @@ module.exports = {
         ${indexPage}
       </html>
     `;
+  },
+
+  buildApparelHtml(apparel) {
+    const indexPage = bodyBuilder.buildApparelBody(apparel);
+    return `
+      <!DOCTYPE html>
+      <html lang="en">
+        ${headBuilder.buildApparel({
+          title: 'title',
+          artist: 'artist'
+        })}
+        ${indexPage}
+      </html>
+    `;
   }
 };

@@ -40,12 +40,12 @@ module.exports = {
                 </div>
                 <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
-                  ${titleBuilder.title('Long-Sleeve Shirts')} <hr>
+                  <a href="/long-sleeves/index.html">${titleBuilder.title('Long-Sleeve Shirts')}</a> <hr>
                 </div>
                 <div class="tshirts">
                   ${longsleeveShirts}
                 </div>
-                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
+                <div><a href="/long-sleeves/index.html"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   ${titleBuilder.title('Recommended Shirts')} <hr>
                 </div>
@@ -89,7 +89,7 @@ module.exports = {
       `;
   },
 
-  buildTShirtBody(genre) {
+  buildApparelBody(apparelType, apparel) {
     return `
         <body>
           <div class="background-splash"></div>
@@ -102,10 +102,10 @@ module.exports = {
               <article class="article">
                 ${breadCrumbBuilder.buildBreadCrumb()}
                 <div class="article-title">
-                  ${genre}
+                  ${apparelType}
                 </div>
                 <div class="artist-container">
-                  ${genres}
+                  ${apparel}
                 </div>
                 </div>
               </article>
