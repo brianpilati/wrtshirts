@@ -1,12 +1,9 @@
 const fs = require('fs');
 const htmlBuilder = require('../libs/html-builder');
 const FilePath = require('../libs/filePath');
-const tshirtBuilder = require('../libs/tshirt-builder');
 const recommendedBuilder = require('../libs/recommended-builder');
-const sweatshirtBuilder = require('../libs/sweatshirt-builder');
-const hoodieBuilder = require('../libs/hoodie-builder');
-const longSleeveShirtBuilder = require('../libs/long-sleeve-builder');
 const mechNameBuilder = require('../libs/mech-name-builder');
+const apparelBuilder = require('../libs/apparel-builder');
 
 const pagesToBuild = 50;
 
@@ -27,10 +24,11 @@ class IndexFileBuilder {
   async buildPages() {
     const recommendedShirts = await recommendedBuilder.getActiveRecommendedShirts();
     const mechNames = await mechNameBuilder.getActiveMechNames();
-    const longsleeveShirts = await longSleeveShirtBuilder.getActiveLongSleeveShirts();
-    const hoodies = await hoodieBuilder.getActiveHoodies();
-    const sweatshirts = await sweatshirtBuilder.getActiveSweatShirts();
-    const tshirts = await tshirtBuilder.getActiveTShirts();
+    const longsleeveShirts = await apparelBuilder.getFrontPageApparel(require('../data/long-sleeve-shirts'));
+    const hoodies = await apparelBuilder.getFrontPageApparel(require('../data/hoodies'));
+    const tshirts = await apparelBuilder.getFrontPageApparel(require('../data/t-shirts'));
+    const sweatshirts = await apparelBuilder.getFrontPageApparel(require('../data/sweatshirts'));
+
     pages.map(index => {
       index++;
       const indexFilePath = getFilePath(index);

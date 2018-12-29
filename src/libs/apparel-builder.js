@@ -1,14 +1,13 @@
-const sweatshirts = require('../data/sweatshirts');
 const constants = require('./constants');
 
 module.exports = {
-  getActiveSweatShirts() {
+  getFrontPageApparel(apparel) {
     return new Promise(resolve => {
       resolve(
-        sweatshirts
+        apparel
           .slice(0, constants.frontPageShirts)
-          .map(sweatshirt => {
-            return `<div class="tshirt">${sweatshirt.code}</div>`;
+          .map(item => {
+            return `<div class="tshirt">${item.code}</div>`;
           })
           .join(' ')
       );

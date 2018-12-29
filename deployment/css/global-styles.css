@@ -1,3 +1,10 @@
+body {
+  background-color: lightgrey;
+  min-width: 550px;
+  display: flex;
+  justify-content: center;
+}
+
 .page-body {
   box-shadow: 5px 5px 5px #888888;
   display: flex;
@@ -115,17 +122,13 @@
   align-items: center;
 }
 
-.footer,
-.legal {
+.footer {
   margin-top: 20px;
   box-shadow: 5px 5px 5px #888888;
-}
-
-body {
-  min-width: 550px;
+  flex-direction: column;
+  flex: auto;
   display: flex;
-  justify-content: center;
-  font-family: 'Comic Sans MS';
+  align-items: center;
 }
 
 hr {
@@ -134,7 +137,7 @@ hr {
 
 .background-splash {
   top: 75px;
-  background: linear-gradient(165deg, #fae3b6, #fceed3);
+  background: linear-gradient(165deg, #a6a6a6, #f2f2f2);
   color: #fff;
 
   position: absolute;
@@ -156,8 +159,9 @@ hr {
 }
 
 .wr-title {
+  font-size: 2em;
   font-weight: bold;
-  color: #8ad0f6;
+  color: #ffcc00;
   text-align: left;
 }
 
@@ -216,8 +220,7 @@ a:active {
   .page-body,
   .page-header,
   .article,
-  .footer,
-  .legal {
+  .footer {
     box-shadow: none;
   }
 }
@@ -290,6 +293,7 @@ a:active {
 }
 
 .see-more-button {
+  padding-top: 5px;
   width: 200px;
   height: 35px;
   border: 1px solid grey;
