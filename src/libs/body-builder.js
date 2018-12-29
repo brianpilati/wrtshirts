@@ -57,10 +57,10 @@ module.exports = {
             <footer class="footer">
               <div class="large-footer-ad">
                 ${adBuilder.buildFooterAd()}
-             </div>
+              </div>
               <div class="small-footer-ad">
                 ${adBuilder.buildSmallFooterAd()}
-             </div>
+              </div>
             </footer>
           </div>
           <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -109,9 +109,15 @@ module.exports = {
                 </div>
                 </div>
               </article>
-              ${adBuilder.buildFooterAd()}
-              <footer class="footer">Footer</footer>
             </div>
+            <footer class="footer">
+              <div class="large-footer-ad">
+                ${adBuilder.buildFooterAd()}
+              </div>
+              <div class="small-footer-ad">
+                ${adBuilder.buildSmallFooterAd()}
+              </div>
+            </footer>
           </div>
         </body>
       `;
