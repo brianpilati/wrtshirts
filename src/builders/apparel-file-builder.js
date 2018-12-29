@@ -3,7 +3,7 @@ const fs = require('fs');
 const htmlBuilder = require('../libs/html-builder');
 const FilePath = require('../libs/file-path');
 const titleBuilder = require('../libs/title-builder');
-const sizes = require('../libs/enums/style-enum');
+const sizes = require('../libs/enums/font-size.enum');
 
 function getFilePath(apparelType) {
   let filePath;
@@ -29,7 +29,7 @@ class ApparelFileBuilder {
         return `
         <div class="apparel">
           <div>
-            ${titleBuilder.title(item.name, sizes.medium)}
+            ${titleBuilder.title(item.name, sizes.small)}
           </div>
           <div>
             ${item.code}

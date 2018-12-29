@@ -3,7 +3,8 @@ const hoodies = require('../data/hoodies');
 const longsleeves = require('../data/long-sleeve-shirts');
 const sweatshirts = require('../data/sweatshirts');
 const titleBuilder = require('./title-builder');
-const sizes = require('./enums/style-enum');
+const sizes = require('./enums/font-size.enum');
+const FilePath = require('../libs/file-path');
 
 function buildNames() {
   const names = {};
@@ -30,7 +31,8 @@ module.exports = {
   getMechNames() {
     const requests = buildNames().map(name => {
       return new Promise(resolve => {
-        resolve(`<div class="mech-name">${titleBuilder.title(name, sizes.medium)}</div>`);
+        const link = FilePath.encodePath(`/mech/${name}/index.html`);
+        resolve(`<div class="mech-name"><a href="${link}">${titleBuilder.title(name, sizes.small)}</a></div>`);
       });
     });
 
