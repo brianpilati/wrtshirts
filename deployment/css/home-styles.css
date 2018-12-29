@@ -1,0 +1,105 @@
+.page-body {
+  display: block;
+}
+
+.article-title {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 1.5em;
+}
+
+.tshirts {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-content: space-evenly;
+  flex: auto;
+}
+
+.recommendations {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-content: space-evenly;
+  flex: auto;
+}
+
+.tshirts {
+  width: 750px;
+  overflow: hidden;
+}
+
+.recommended {
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.tshirt {
+  width: 125px;
+  height: 250px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .tshirts {
+    width: 400px;
+    min-width: 400px;
+  }
+
+  .recommendations {
+    width: 325px;
+  }
+
+  .track-image-container,
+  .track-image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .track-title {
+    font-size: 0.75em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .tshirts {
+    width: 500px;
+  }
+
+  .recommendations {
+    width: 500px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .tshirts {
+    width: 700px;
+  }
+
+  .recommendations {
+    width: 700px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .recommendations {
+    width: 900px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

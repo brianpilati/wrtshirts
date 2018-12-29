@@ -20,7 +20,7 @@ module.exports = {
                 </div>
                 <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
-                  ${titleBuilder.title('T-Shirts')} <hr>
+                  <a href="/tshirts">${titleBuilder.title('T-Shirts')}</a> <hr>
                 </div>
                 <div class="tshirts">
                   ${tshirts}
