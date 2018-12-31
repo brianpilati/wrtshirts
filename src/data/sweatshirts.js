@@ -18,7 +18,7 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KPC5VJH&asins=B07KPC5VJH&linkId=509caa48ae6f57be05cda0ac28060c6c&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Orkan',
     description: 'The Other Pest Control - Orkan - War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KP4GKRX&asins=B07KP4GKRX&linkId=e89f04f87fd940c33130ae7567529b15&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -36,7 +36,13 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KP4GMBX&asins=B07KP4GMBX&linkId=fff4a704ba7bffdbf3c7626b85eb2262&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Zeus',
+    description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
+    code:
+      '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KP9Y13N&asins=B07KP9Y13N&linkId=b8db9d7c1121ba5c82cf88fcabf6f5fc&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
+  },
+  {
+    name: 'Thunder',
     description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KP9Y13N&asins=B07KP9Y13N&linkId=b8db9d7c1121ba5c82cf88fcabf6f5fc&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -96,7 +102,7 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KHSK7C2&asins=B07KHSK7C2&linkId=3235d707c78e7c0c839c13ad4fb5bda1&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'bulgasari',
+    name: 'Bulgasari',
     description: 'Orkan Bulgasari - War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KH144RB&asins=B07KH144RB&linkId=413669541f55ff093b5cbb47db1ccbcc&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -106,11 +112,6 @@ module.exports = [
     description: '',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KH257JT&asins=B07KH257JT&linkId=de4e72c0592948f2816824ad6bd91fc3&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
   }
 ].sort((a, b) => {
   return a.name > b.name ? 1 : -1;

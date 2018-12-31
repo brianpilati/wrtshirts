@@ -1,6 +1,6 @@
 module.exports = [
   {
-    name: 'Weapons',
+    name: 'Taran',
     description: "Sorry, I'm Taran the place up! Hoodie: War Robots",
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KHHBG8M&asins=B07KHHBG8M&linkId=47eb3a2e0090111930f4c5ed6a547f3d&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -12,13 +12,13 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KHDS1HY&asins=B07KHDS1HY&linkId=7c3460bb1c51cf63ac0ad807c47b413b&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Pin',
     description: "Let's Put A Pin In It - War Robots",
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KH5QJ3D&asins=B07KH5QJ3D&linkId=85ae5ec0c726fd625b7a9ca0ea310314&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Orkan',
     description: 'The Other Pest Control - Orkan - War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KHD8VF4&asins=B07KHD8VF4&linkId=4b5ea3f216e83f980f191ff8ebf48a45&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -42,7 +42,13 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KHHZ294&asins=B07KHHZ294&linkId=367c82ab293744fb57ac62ac893dc566&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Thunder',
+    description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
+    code:
+      '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KH3XDQF&asins=B07KH3XDQF&linkId=e868965ad27c6321e35598f23a6345cb&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
+  },
+  {
+    name: 'Zeus',
     description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KH3XDQF&asins=B07KH3XDQF&linkId=e868965ad27c6321e35598f23a6345cb&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -118,11 +124,6 @@ module.exports = [
     description: 'Camping Crew - War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07KH8BXFB&asins=B07KH8BXFB&linkId=039c19e4b79189770927a0b77ca46168&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
   }
 ].sort((a, b) => {
   return a.name > b.name ? 1 : -1;

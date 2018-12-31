@@ -1,6 +1,6 @@
 module.exports = [
   {
-    name: 'Weapons',
+    name: 'Taran',
     description: "Sorry, I'm Taran the place up! Long-Sleeve Shirt: War Robots",
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K61YK9K&asins=B07K61YK9K&linkId=ebce423fdd231830b8618ed0bbd0c861&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -18,7 +18,7 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K61X27Q&asins=B07K61X27Q&linkId=f1680a95eed51948f8c58013446afa50&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Pin',
     description: "Let's Put A Pin In It - War Robots",
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K5YCF57&asins=B07K5YCF57&linkId=1ef6ba5bf8849db03fbbe60a8e9d2a72&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -30,7 +30,13 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K5YCF17&asins=B07K5YCF17&linkId=25f1f0ad2c21e90470acfb5187a177aa&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Zeus',
+    description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
+    code:
+      '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K67YPQ7&asins=B07K67YPQ7&linkId=6b5e2ee209a324e7752035e1b74eda9f&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
+  },
+  {
+    name: 'Thunder',
     description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K67YPQ7&asins=B07K67YPQ7&linkId=6b5e2ee209a324e7752035e1b74eda9f&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -78,7 +84,7 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K5WFBFH&asins=B07K5WFBFH&linkId=546f1a448edc4f28281911d79dff2488&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Orkan',
     description: 'The Other Pest Control - Orkan - War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07K5X35YS&asins=B07K5X35YS&linkId=c4e2456c56adca708340669f1b201222&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -118,81 +124,6 @@ module.exports = [
     description: 'Bulgasari - War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07HRQSLJH&asins=B07HRQSLJH&linkId=7050f72865c38013d0de605271bedaaf&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
-  },
-  {
-    name: '',
-    description: '',
-    code: ''
   }
 ].sort((a, b) => {
   return a.name > b.name ? 1 : -1;

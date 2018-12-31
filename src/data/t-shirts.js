@@ -24,7 +24,7 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07B8DML5M&asins=B07B8DML5M&linkId=f1fc98263686b9bbb108904e0d4903c8&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Taran',
     description: "Sorry, I'm Taran the place up! T-Shirt: War Robots",
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B079M21TL9&asins=B079M21TL9&linkId=eae0c3e2ed622cfcb869675663c7464d&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
@@ -108,19 +108,25 @@ module.exports = [
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07F9W3BG2&asins=B07F9W3BG2&linkId=448fab8a20b2baf444b1f4b502fcd9ad&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Orkan',
     description: 'The Other Pest Control - Orkan - War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07F9RTPVD&asins=B07F9RTPVD&linkId=f6c247741f2f518f56395eabeae3ee27&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Zeus',
     description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07F9V4XTT&asins=B07F9V4XTT&linkId=f3b2178f8c40793dca14c0d8e91017af&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
   },
   {
-    name: 'Weapons',
+    name: 'Thunder',
+    description: 'Lightning Always Strikes Before ... The Thunder! War Robots',
+    code:
+      '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07F9V4XTT&asins=B07F9V4XTT&linkId=f3b2178f8c40793dca14c0d8e91017af&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
+  },
+  {
+    name: 'Pin',
     description: "Let's Put A Pin In It - War Robots",
     code:
       '<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=kanikapilas-20&marketplace=amazon&region=US&placement=B07F9SK9XP&asins=B07F9SK9XP&linkId=2a3814f5e41bf23d53cb330416353a0a&show_border=true&link_opens_in_new_window=true&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>'
