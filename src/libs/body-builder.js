@@ -30,14 +30,14 @@ module.exports = {
                 <div class="tshirts">
                   ${hoodies}
                 </div>
-                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
+                <div><a href="/hoodies"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   <a href="/sweatshirts">${titleBuilder.title('Sweatshirts')}</a> <hr>
                 </div>
                 <div class="tshirts">
                   ${sweatshirts}
                 </div>
-                <div><a href="/tshirts"><div class="see-more-button">See More ...</div></a></div>
+                <div><a href="/sweatshirts"><div class="see-more-button">See More ...</div></a></div>
                 <div class="article-title">
                   <a href="/long-sleeves/index.html">${titleBuilder.title('Long-Sleeve Shirts')}</a> <hr>
                 </div>

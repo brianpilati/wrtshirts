@@ -14,7 +14,9 @@
     "format:all": "prettier --config ./.prettierrc --write \"src/**/*{.js,.json,.css,.scss}\""
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  },
   "devDependencies": {
     "husky": "^0.14.3",
     "minimist": "^1.2.0",
