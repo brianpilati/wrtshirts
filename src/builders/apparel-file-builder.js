@@ -4,13 +4,17 @@ const htmlBuilder = require('../libs/html-builder');
 const FilePath = require('../libs/file-path');
 const titleBuilder = require('../libs/title-builder');
 const sizes = require('../libs/enums/font-size.enum');
+const SiteBuilder = require('../libs/site-map-builder');
+const siteBuilder = new SiteBuilder('apparel');
 
 function getFilePath(apparelType) {
   let filePath;
 
   filePath = `${FilePath.getBasePath()}/deployment/${apparelType}/index.html`;
   FilePath.ensureDirectoryExistence(filePath);
-  return FilePath.encodePath(filePath);
+  const encodedPath = FilePath.encodePath(filePath);
+  siteBuilder.addLink(encodedPath);
+  return encodedPath;
 }
 
 function getAllShirts() {
@@ -56,7 +60,10 @@ class ApparelFileBuilder {
       await this.buildApparelPage(require('../data/hoodies'), 'hoodies', 'Hoodies'),
       await this.buildApparelPage(require('../data/sweatshirts'), 'sweatshirts', 'Sweatshirts'),
       await this.buildApparelPage(getAllShirts(), 'recommended', 'Recommended Shirts')
-    ]);
+    ]).then(results => {
+      siteBuilder.buildSiteMap();
+      return results;
+    });
   }
 }
 

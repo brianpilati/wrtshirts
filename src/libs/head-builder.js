@@ -1,4 +1,3 @@
-const nowDateTime = getFormattedDate();
 const constants = require('./constants');
 
 function buildArticleTags(genres) {
@@ -44,6 +43,8 @@ function getFormattedDate() {
   )}${timezone}`;
 }
 
+const nowDateTime = getFormattedDate();
+
 module.exports = {
   buildApparel: function(apparel) {
     return `
@@ -55,13 +56,13 @@ module.exports = {
           &quot;${apparel.name}&quot; by ${constants.artist} on ${constants.siteName}
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="keywords" content="war robots, t-shirt, shirt, pixonic, apparel, free, best, favorite, sweatshirts, long-sleeve shirts, hoodies, tshirt" /> 
+        <meta name="keywords" content="war robots, t-shirt, shirt, pixonic, apparel, free, best, favorite, sweatshirts, long-sleeve shirts, hoodies, tshirt, cheats, codes, warrobots, gifts" /> 
         <meta name="description" content="&quot;${apparel.name}&quot; by ${
       constants.artist
     } shirts, t-shirts, long-sleeve shirts, sweatshirts and hoodies. Fulfillment by Amazon.com. 2-day Shipping with Amazon Prime" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="&quot;${apparel.title}&quot; by ${
+        <meta property="og:title" content="&quot;${apparel.name}&quot; by ${
       constants.artist
     } t-shirt shirt long-sleeve, sweatshirts and hoodies on ${constants.siteName}" />
         <meta name="og:description" content="&quot;${apparel.name}&quot; by ${
@@ -69,18 +70,11 @@ module.exports = {
     } shirts, t-shirts, long-sleeve shirts, sweatshirts and hoodies. Fulfillment by Amazon.com. 2-day Shipping with Amazon Prime" />
         <meta property="article:section" content="${constants.artist}" />
 
-        <meta name="twitter:creator" content="@war robots" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:description" content="&quot;${apparel.name}&quot; by ${
-      constants.artist
-    } shirts, t-shirts, long-sleeve shirts, sweatshirts and hoodies. Fulfillment by Amazon.com. 2-day Shipping with Amazon Prime" />
-
-        <meta name="twitter:site" content="@war robots" />
         ${buildArticleTags(apparel.genre)}
         <meta property="article:modified_time" content="${nowDateTime}" />
         <meta property="og:updated_time" content="${nowDateTime}" />
-        <meta property="article:publisher" content="https://www.facebook.com/war robots" />
-        <meta property="article:published_time" content="${apparel.createdDate}" />
+        <meta property="article:publisher" content="https://www.facebook.com/war_robots" />
+        <meta property="article:published_time" content="${nowDateTime}" />
         <link rel="stylesheet" href="/css/global-styles.css">
         <link rel="stylesheet" href="/css/tshirt-styles.css">
         <link rel="stylesheet" href="/css/apparel-styles.css">
@@ -97,7 +91,7 @@ module.exports = {
         <title>${constants.siteName} - t-shirt shirt &amp; Tips </title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <meta name="keywords" content="war robots, t-shirt, shirt, pixonic, apparel, free, best, favorite, sweatshirts, long-sleeve shirts, hoodies, tshirt" /> 
+        <meta name="keywords" content="war robots, t-shirt, shirt, pixonic, apparel, free, best, favorite, sweatshirts, long-sleeve shirts, hoodies, tshirt, cheats, codes, warrobots, gifts" /> 
 
         <meta name="description" content="${
           constants.siteName
@@ -107,25 +101,17 @@ module.exports = {
           constants.siteName
         } is your source for  shirts, t-shirts, long-sleeve shirts, sweatshirts and hoodies. Fulfillment by Amazon.com. 2-day Shipping with Amazon Prime" />
 
-        <meta name="twitter:description" content="${
-          constants.siteName
-        } is your source for  shirts, t-shirts, long-sleeve shirts, sweatshirts and hoodies. Fulfillment by Amazon.com. 2-day Shipping with Amazon Prime" />
-
         <meta property="og:locale" content="en_US" />
 
         ${buildLinks(index)}
 
-        <link rel="publisher" href="https://www.facebook.com/war robots" />
+        <link rel="publisher" href="https://www.facebook.com/war_robots" />
 
         <meta property="og:type" content="website" />
         <meta property="og:title" content="${constants.siteName}" />
         <meta property="og:url" content="${constants.siteUrl}" />
         <meta property="og:site_name" content="${constants.siteName}" />
 
-        <meta name="twitter:creator" content="@war robots" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta prooperty="twitter:title" content="${constants.siteName} - t-shirt shirt &amp; Tips" />
-        <meta name="twitter:site" content="@war robots" />
         <meta property="website:modified_time" content="${nowDateTime}" />
         <meta property="og:updated_time" content="${nowDateTime}" />
         <meta property="website:published_time" content="${nowDateTime}" />

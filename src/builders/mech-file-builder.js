@@ -5,13 +5,17 @@ const FilePath = require('../libs/file-path');
 const titleBuilder = require('../libs/title-builder');
 const sizes = require('../libs/enums/font-size.enum');
 const styleEnums = require('../libs/enums/style-enum');
+const SiteBuilder = require('../libs/site-map-builder');
+const siteBuilder = new SiteBuilder('mech');
 
 function getFilePath(mech) {
   let filePath;
 
   filePath = `${FilePath.getBasePath()}/deployment/mech/${mech}/index.html`;
   FilePath.ensureDirectoryExistence(filePath);
-  return FilePath.encodePath(filePath);
+  const encodedPath = FilePath.encodePath(filePath);
+  siteBuilder.addLink(encodedPath);
+  return encodedPath;
 }
 
 function buildPageData() {
@@ -80,8 +84,11 @@ class MechFileBuilder {
     return Promise.all(results);
   }
 
-  async buildAllPages() {
-    return await this.buildMechPage();
+  buildAllPages() {
+    return this.buildMechPage().then(result => {
+      siteBuilder.buildSiteMap();
+      return result;
+    });
   }
 }
 

@@ -5,6 +5,8 @@ const FilePath = require('../libs/file-path');
 const recommendedBuilder = require('../libs/recommended-builder');
 const mechNameBuilder = require('../libs/mech-name-builder');
 const apparelBuilder = require('../libs/apparel-builder');
+const SiteBuilder = require('../libs/site-map-builder');
+const siteBuilder = new SiteBuilder('pages');
 
 const pagesToBuild = 50;
 
@@ -17,7 +19,9 @@ function getFilePath(index) {
     FilePath.ensureDirectoryExistence(filePath);
   }
 
-  return FilePath.encodePath(filePath);
+  const encodedPath = FilePath.encodePath(filePath);
+  siteBuilder.addLink(encodedPath);
+  return encodedPath;
 }
 const pages = Array.apply(null, { length: pagesToBuild }).map(Number.call, Number);
 
@@ -52,7 +56,10 @@ class IndexFileBuilder {
       });
     });
 
-    return Promise.all(results);
+    return Promise.all(results).then(results => {
+      siteBuilder.buildSiteMap();
+      return results;
+    });
   }
 }
 
